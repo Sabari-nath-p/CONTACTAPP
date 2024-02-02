@@ -1,6 +1,7 @@
 
 import 'package:contactapp/AddContact/components/ContactCard.dart';
 import 'package:contactapp/AddContact/components/ContactData.dart';
+import 'package:contactapp/AddContact/components/ProfileCard.dart';
 import 'package:contactapp/AddContact/components/QRCard.dart';
 import 'package:contactapp/AddContact/components/ScannerCard.dart';
 
@@ -70,6 +71,15 @@ class _DashboradScreenState extends State<DashboradScreen> {
                         Navigator.of(context).push(MaterialPageRoute(builder: (context)=>ScannerCardScreen()));
                       },
                       child: Text("nandikesh 1",style: TextStyle(fontSize: 20,color: Colors.black),))),
+                     
+                 SizedBox(height: 4,),
+                  Align(
+                    alignment: Alignment.center,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>ProfileCardScreen()));
+                      },
+                      child: Text("sai 2",style: TextStyle(fontSize: 20,color: Colors.black),))),
                      
                  SizedBox(height: 4,),
                 
