@@ -1,3 +1,5 @@
+
+import 'package:contactapp/AddContactScreen/components/ContactDataScreen.dart';
 import 'package:flutter/material.dart';
 
 class DashboradScreen extends StatefulWidget {
@@ -16,7 +18,11 @@ class _DashboradScreenState extends State<DashboradScreen> {
                   SizedBox(height: 20,),
                   Align(
                     alignment: Alignment.center,
-                    child: Text("SAI",style: TextStyle(fontSize: 20,color: Colors.black),))
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>ContactDataScreen()));
+                      },
+                      child: Text("SAI",style: TextStyle(fontSize: 20,color: Colors.black),)))
                 ],
               ),
 
