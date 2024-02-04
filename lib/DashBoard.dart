@@ -83,6 +83,78 @@ class _DashboradScreenState extends State<DashboradScreen> {
                      
                  SizedBox(height: 4,),
                 
+                  Align(
+                    alignment: Alignment.center,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>addCategory()));
+                      },
+                      child: Text("akluNaynu",style: TextStyle(fontSize: 20,color: Colors.black),))),
+                     
+                 SizedBox(height: 4,),
+                 Align(
+                    alignment: Alignment.center,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>addMember()));
+                      },
+                      child: Text("akluNaynu1",style: TextStyle(fontSize: 20,color: Colors.black),))),
+
+                       Align(
+                    alignment: Alignment.center,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>tags()));
+                      },
+                      child: Text("jassimakhil",style: TextStyle(fontSize: 20,color: Colors.black),))),
+                     
+                 SizedBox(height: 4,), 
+                  Align(
+                    alignment: Alignment.center,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>addTags()));
+                      },
+                      child: Text("jassimakhil1",style: TextStyle(fontSize: 20,color: Colors.black),))),
+                     
+                 SizedBox(height: 4,),
+
+
+
+
+                     
+                 SizedBox(height: 4,),
+                 Align(
+                    alignment: Alignment.center,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>contactProfileScreen()));
+                      },
+                      child: Text("akluNaynu2",style: TextStyle(fontSize: 20,color: Colors.black),))),
+                     
+                 SizedBox(height: 4,),
+                
+                Align(
+                    alignment: Alignment.center,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>ContactScreen()));
+                      },
+                      child: Text("akluNaynu3",style: TextStyle(fontSize: 20,color: Colors.black),))),
+                     
+                 SizedBox(height: 4,),
+                   Align(
+                    alignment: Alignment.center,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>category()));
+                      },
+                      child: Text("jassimakhil2",style: TextStyle(fontSize: 20,color: Colors.black),))),
+                     
+                 SizedBox(height: 4,),
+
+
+                 
                 
                 ],
               ),
