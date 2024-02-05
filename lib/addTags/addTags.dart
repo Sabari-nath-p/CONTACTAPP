@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class ContactScreen extends StatefulWidget {
-  const ContactScreen({super.key});
+class AddTagScreen extends StatefulWidget {
+  const AddTagScreen({super.key});
 
   @override
-  State<ContactScreen> createState() => _ContactScreenState();
+  State<AddTagScreen> createState() => _AddTagScreenState();
 }
 
-class _ContactScreenState extends State<ContactScreen> {
+class _AddTagScreenState extends State<AddTagScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,4 +1,6 @@
 
+import 'package:contactapp/AddCategory/AddCategoryScreen.dart';
+
 import 'package:contactapp/AddContact/components/ContactCard.dart';
 import 'package:contactapp/AddContact/components/ContactData.dart';
 import 'package:contactapp/AddContact/components/ProfileCard.dart';
@@ -6,7 +8,13 @@ import 'package:contactapp/AddContact/components/QRCard.dart';
 import 'package:contactapp/AddContact/components/ScannerCard.dart';
 
 import 'package:contactapp/AddEvent.dart';
+import 'package:contactapp/AddMember/addMember.dart';
+import 'package:contactapp/Categories/category.dart';
+import 'package:contactapp/Contacts/components/contactProfile.dart';
+import 'package:contactapp/Contacts/components/contactsScreen.dart';
 import 'package:contactapp/EventScreen.dart';
+import 'package:contactapp/Tags/tags.dart';
+import 'package:contactapp/addTags/addTags.dart';
 import 'package:flutter/material.dart';
 
 class DashboradScreen extends StatefulWidget {
@@ -83,6 +91,78 @@ class _DashboradScreenState extends State<DashboradScreen> {
                      
                  SizedBox(height: 4,),
                 
+                  Align(
+                    alignment: Alignment.center,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>AddCategoryScreen()));
+                      },
+                      child: Text("akluNaynu",style: TextStyle(fontSize: 20,color: Colors.black),))),
+                     
+                 SizedBox(height: 4,),
+                 Align(
+                    alignment: Alignment.center,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>AddMemberScreen()));
+                      },
+                      child: Text("akluNaynu1",style: TextStyle(fontSize: 20,color: Colors.black),))),
+
+                       Align(
+                    alignment: Alignment.center,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>TagScreen()));
+                      },
+                      child: Text("tag screen",style: TextStyle(fontSize: 20,color: Colors.black),))),
+                     
+                 SizedBox(height: 4,), 
+                  Align(
+                    alignment: Alignment.center,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>AddTagScreen()));
+                      },
+                      child: Text("add tag screen",style: TextStyle(fontSize: 20,color: Colors.black),))),
+                     
+                 SizedBox(height: 4,),
+
+
+
+
+                     
+                 SizedBox(height: 4,),
+                 Align(
+                    alignment: Alignment.center,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>contactProfileScreen()));
+                      },
+                      child: Text("Contactprofile",style: TextStyle(fontSize: 20,color: Colors.black),))),
+                     
+                 SizedBox(height: 4,),
+                
+                Align(
+                    alignment: Alignment.center,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>ContactScreen()));
+                      },
+                      child: Text("akluNaynu3",style: TextStyle(fontSize: 20,color: Colors.black),))),
+                     
+                 SizedBox(height: 4,),
+                   Align(
+                    alignment: Alignment.center,
+                    child: InkWell(
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(builder: (context)=>CategoryScreen()));
+                      },
+                      child: Text("Category",style: TextStyle(fontSize: 20,color: Colors.black),))),
+                     
+                 SizedBox(height: 4,),
+
+
+                 
                 
                 ],
               ),
