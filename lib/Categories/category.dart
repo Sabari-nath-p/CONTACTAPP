@@ -11,11 +11,16 @@ class _categoryState extends State<category> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: [
-          
-        ],
-      ),
-    );
-  }
+      appBar: AppBar(
+        backgroundColor: const Color(0xFFBF782B),
+        title: const Text(
+          'Categories',
+          style: TextStyle(
+            fontSize: 36.0,
+          ),
+        ),
+        centerTitle: true,
+      ),
+    );
+  }
 }

@@ -12,9 +12,7 @@ class tags extends State<tags> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [
-          
-        ],
+        children: [],
       ),
     );
   }
