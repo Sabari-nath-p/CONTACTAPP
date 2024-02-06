@@ -1,5 +1,6 @@
 import 'package:contactapp/main.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
 
 
@@ -22,7 +23,7 @@ class _AddEventScreenState extends State<AddEventScreen> {
 
         
 
-        title: Text('Add Event', style: TextStyle(color: Colors.white,fontSize: 8.sp),),
+        title: Text('Add Event', style: GoogleFonts.karma(color: Colors.white,fontSize: 11.sp,fontWeight: FontWeight.w500),),
         backgroundColor: Color(0xffBF782B),
         centerTitle: true,
       ),
@@ -53,7 +54,7 @@ class _AddEventScreenState extends State<AddEventScreen> {
               child: TextFormField(
                 decoration: InputDecoration(
                   hintText: 'Event Name',
-                  hintStyle: TextStyle(color: Color(0xffA56219), fontSize: 4.sp,),
+                  hintStyle: GoogleFonts.karma(color: Color(0xffA56219), fontSize: 4.sp,),
                   prefixIcon: Icon(
                     Icons.roller_shades_closed,
                     color: Color(0xffA56219), // Example of setting the color
@@ -81,7 +82,7 @@ class _AddEventScreenState extends State<AddEventScreen> {
                   child: TextFormField(
                     decoration: InputDecoration(
                       hintText: 'Location',
-                      hintStyle: TextStyle(
+                      hintStyle: GoogleFonts.karma(
                           color: Color(0xffA56219),
                           fontSize: 4.sp,
                           fontWeight: FontWeight.w500),
@@ -106,7 +107,7 @@ class _AddEventScreenState extends State<AddEventScreen> {
                 child: TextFormField(
                   decoration: InputDecoration(
                     hintText: 'Start Date',
-                    hintStyle: TextStyle(color: Color(0xffA56219), fontSize: 4.sp),
+                    hintStyle: GoogleFonts.karma(color: Color(0xffA56219), fontSize: 4.sp),
                     prefixIcon: Icon(
                       Icons.calendar_month,
                       color: Color(0xffA56219), // Example of setting the color
@@ -131,7 +132,7 @@ class _AddEventScreenState extends State<AddEventScreen> {
                 child: TextFormField(
                   decoration: InputDecoration(
                     hintText: 'End Date',
-                    hintStyle: TextStyle(color: Color(0xffA56219), fontSize: 4.sp),
+                    hintStyle: GoogleFonts.karma(color: Color(0xffA56219), fontSize: 4.sp),
                     prefixIcon: Icon(
                       Icons.calendar_month,
                       color: Color(0xffA56219), // Example of setting the color
@@ -157,7 +158,7 @@ class _AddEventScreenState extends State<AddEventScreen> {
                 child: TextFormField(
                   decoration: InputDecoration(
                     hintText: 'Attended by',
-                    hintStyle: TextStyle(color: Color(0xffA56219), fontSize: 4.sp),
+                    hintStyle: GoogleFonts.karma(color: Color(0xffA56219), fontSize: 4.sp),
                     prefixIcon: Icon(
                       Icons.person,
                       color: Color(0xffA56219), // Example of setting the color
@@ -190,7 +191,7 @@ class _AddEventScreenState extends State<AddEventScreen> {
                             ),
                           child: Center(child: Text(
                             'SAVE',
-                            style: TextStyle(
+                            style: GoogleFonts.karma(
                               color:Colors.white,
                               ),)),
                           ),
@@ -210,7 +211,7 @@ class _AddEventScreenState extends State<AddEventScreen> {
                             ),
                           child: Center(child: Text(
                             'RESET',
-                            style: TextStyle(
+                            style: GoogleFonts.karma(
                               color:Colors.white
                               ),)),
                           ),
