@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
 
 class ContactDataScreen extends StatefulWidget {
   const ContactDataScreen({super.key});
@@ -12,7 +13,7 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
                   appBar: AppBar(
-                    title: Text("Add Contact",style: TextStyle(color: Colors.white),),
+                    title: Text("Add Contact",style:TextStyle(color: Colors.white),),
                     centerTitle:true,
                     backgroundColor:Color(0xFFBF782B),
                     leading: InkWell(
@@ -46,16 +47,16 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
 
       body: Column(
         children: [
-
-
-            SizedBox(height:25),
+      
+      
+            
             Padding(
               padding: const EdgeInsets.all(8.0),
                 child: Row(
                   children: [
                    Container(
-                    height: 75,
-                    width: 75,
+                    height: 13.2.h,
+                    width: 29.7.w,
                     decoration:BoxDecoration(
                       shape: BoxShape.circle,
                       border: Border.all(
@@ -64,10 +65,12 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
                       )
                     ),
                    ),
-                   SizedBox(width: 10),
+      
+                   SizedBox(width: 5.w),
+                   
                    Container(
-                    height: 75,
-                    width: 75,
+                    height: 13.2.h,
+                    width: 29.7.w,
                     decoration:BoxDecoration(
                       color:Color(0xFFFDF4EB) ,
                       shape: BoxShape.circle,
@@ -81,16 +84,17 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
                   ],
                 ),
             ),
-
-            SizedBox(height: 25),
-
+      
+            SizedBox(height: 5.h),
+      
             Row(
               children: [
-                Expanded(
+                Flexible(
                   child: Padding(
                     padding: const EdgeInsets.only(left: 20),
                     child: SizedBox(
-                      height:50,
+                      height: 7.41.h,
+                      width: 189.5.w,
                       child: TextFormField(
                         decoration: InputDecoration(
                           filled: true,
@@ -106,12 +110,15 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
                     ),
                   ),
                 ),
-                SizedBox(width: 10),
-                Expanded(
+      
+                 SizedBox(width: 5.w),
+             
+                Flexible(
                   child: Padding(
                     padding: const EdgeInsets.only(right: 20),
                     child: SizedBox(
-                      height: 50,
+                     height: 7.41.h,
+                      width: 189.5.w,
                       child: TextFormField(
                         decoration: InputDecoration(
                           filled: true,
@@ -129,16 +136,17 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
                 ),
               ],
             ),
-
-            SizedBox(height: 15),
-
+      
+           
+      
             Row(
               children: [
                 Expanded(
                   child: Padding(
                     padding: const EdgeInsets.only(left: 20),
                     child: SizedBox(
-                      height:50,
+                      height: 7.41.h,
+                      width: 189.5.w,
                       child: TextFormField(
                         decoration: InputDecoration(
                           filled: true,
@@ -154,12 +162,15 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
                     ),
                   ),
                 ),
-                SizedBox(width: 10),
+      
+                 SizedBox(width: 5.w),
+               
                 Expanded(
                   child: Padding(
                     padding: const EdgeInsets.only(right: 20),
                     child: SizedBox(
-                      height: 50,
+                      height: 7.41.h,
+                      width: 189.5.w,
                       child: TextFormField(
                         decoration: InputDecoration(
                           filled: true,
@@ -177,14 +188,15 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
                 ),
               ],
             ),
-
-            SizedBox(height: 15),
-
-
+      
+            
+      
+      
              Padding(
                     padding: const EdgeInsets.only(right: 20,left: 20),
                     child: SizedBox(
-                      height: 50,
+                      height: 7.41.h,
+                      width: 189.5.w,
                       child: TextFormField(
                         decoration: InputDecoration(
                           filled: true,
@@ -199,16 +211,17 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
                       ),
                     ),
                   ),
-
-                  SizedBox(height: 15),
-
+      
+                  
+      
                   Row(
               children: [
                 Expanded(
                   child: Padding(
                     padding: const EdgeInsets.only(left: 20),
                     child: SizedBox(
-                      height:50,
+                      height: 7.41.h,
+                      width: 189.5.w,
                       child: TextFormField(
                         decoration: InputDecoration(
                           filled: true,
@@ -225,12 +238,15 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
                     ),
                   ),
                 ),
-                SizedBox(width: 10),
+      
+                 SizedBox(width: 5.w),
+               
                 Expanded(
                   child: Padding(
                     padding: const EdgeInsets.only(right: 20),
                     child: SizedBox(
-                      height: 50,
+                     height: 7.41.h,
+                      width: 189.5.w,
                       child: TextFormField(
                         decoration: InputDecoration(
                           filled: true,
@@ -249,13 +265,14 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
                 ),
               ],
             ),
-
-            SizedBox(height: 15),
-
+      
+            
+      
             Padding(
                     padding: const EdgeInsets.only(right: 20,left: 20),
                     child: SizedBox(
-                      height: 50,
+                      height: 7.41.h,
+                      width: 189.5.w,
                       child: TextFormField(
                         decoration: InputDecoration(
                           filled: true,
@@ -271,13 +288,14 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
                       ),
                     ),
                   ),
-
-                  SizedBox(height: 15),
-
+      
+                  
+      
                   Padding(
                     padding: const EdgeInsets.only(right: 20,left: 20),
                     child: SizedBox(
-                      height: 50,
+                      height: 7.41.h,
+                      width: 189.5.w,
                       child: TextFormField(
                         decoration: InputDecoration(
                           filled: true,
@@ -293,13 +311,14 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
                       ),
                     ),
                   ),
-
-                  SizedBox(height: 15),
-
+      
+               
+      
                   Padding(
                     padding: const EdgeInsets.only(right: 20,left: 20),
                     child: SizedBox(
-                      height: 50,
+                      height: 7.41.h,
+                      width: 189.5.w,
                       child: TextFormField(
                         decoration: InputDecoration(
                           filled: true,
@@ -314,13 +333,14 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
                       ),
                     ),
                   ),
-
-                  SizedBox(height: 15),
-
+      
+                  
+      
                   Padding(
                     padding: const EdgeInsets.only(right: 20,left: 20),
                     child: SizedBox(
-                      height: 50,
+                      height: 7.41.h,
+                      width: 189.5.w,
                       child: TextFormField(
                         decoration: InputDecoration(
                           filled: true,
@@ -335,17 +355,17 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
                       ),
                     ),
                   ),
-
-
+      
+      
           
-           SizedBox(height: 25),
+          
             InkWell(
                       onTap: () {
                         
                       },
                       child: Container(
-                      height: 30,
-                      width: 100,
+                      height:5.h,
+                      width: 40.w,
                       margin: EdgeInsetsDirectional.only(end: 10),
                       decoration: BoxDecoration(
                         color: Color(0xFFBF782B),
@@ -358,10 +378,10 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
                           ),)),
                       ),
                       ),
-
-
-
-
+      
+                    SizedBox(height: 10.w),
+      
+      
         ],
       ),
     );
