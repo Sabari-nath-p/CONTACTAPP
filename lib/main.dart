@@ -5,7 +5,7 @@ import 'package:sizer/sizer.dart';
 
 double width = 3.8;
 double height = 8.5;
-double fontsize = 12;
+double fontsize = 1.2;
 
 void main(){
 
