@@ -11,8 +11,7 @@ class _AddEventScreenState extends State<AddEventScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Add Category"),backgroundColor: Color.fromRGBO(191, 120, 43, 1)),
+      
       ) 
         
       

@@ -6,11 +6,20 @@ class AddCategoryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      appBar: Column(
         children: [
+          AppBar (title:Text("Add Category"), 
+          backgroundColor:Color.fromRGBO(191, 120, 43, 1),
+          centerTitle: true,
           
+          
+          
+          
+            
+          
+              ),
         ],
-      ),
+      )
     );
   }
 }
