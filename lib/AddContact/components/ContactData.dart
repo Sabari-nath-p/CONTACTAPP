@@ -45,343 +45,353 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
                     ),
 
 
-      body: Column(
+      body: ListView(
         children: [
-      
-      
-            
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-                child: Row(
+          Column(
+            children: [
+              SizedBox(height: 5.h,),
+          
+                
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                       Align(
+                        alignment: Alignment.centerLeft,
+                         child: Container(
+                          height: 13.2.h,
+                          width: 29.7.w,
+                          decoration:BoxDecoration(
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              width:2,
+                              color: Color(0xFFBF782B)
+                            )
+                          ),
+                         ),
+                       ),
+
+                       SizedBox(width: 5.w),
+                       
+                       Align(
+                        alignment: Alignment.centerLeft,
+                         child: Container(
+                          height: 13.2.h,
+                          width: 29.7.w,
+                          decoration:BoxDecoration(
+                            color:Color(0xFFFDF4EB) ,
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              width:2,
+                              color: Color(0xFFBF782B)
+                            )
+                          ),
+                          child: Icon(Icons.camera_alt_rounded,),
+                         ),
+                       )
+                      ],
+                    ),
+                ),
+          
+                SizedBox(height: 2.h),
+          
+                Row(
                   children: [
-                   Container(
-                    height: 13.2.h,
-                    width: 29.7.w,
-                    decoration:BoxDecoration(
-                      shape: BoxShape.circle,
-                      border: Border.all(
-                        width:2,
-                        color: Color(0xFFBF782B)
-                      )
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 20),
+                        child: SizedBox(
+                          height: 7.41.h,
+                          width: 189.5.w,
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Color(0xFFFDF4EB) ,
+                              hintText: 'Name',
+                              contentPadding: EdgeInsets.all(15),
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide: BorderSide.none
+                              )
+                            ),
+                          ),
+                        ),
+                      ),
                     ),
-                   ),
-      
-                   SizedBox(width: 5.w),
-                   
-                   Container(
-                    height: 13.2.h,
-                    width: 29.7.w,
-                    decoration:BoxDecoration(
-                      color:Color(0xFFFDF4EB) ,
-                      shape: BoxShape.circle,
-                      border: Border.all(
-                        width:2,
-                        color: Color(0xFFBF782B)
-                      )
+
+                     SizedBox(width: 5.w),
+                 
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.only(right: 20),
+                        child: SizedBox(
+                         height: 7.41.h,
+                          width: 189.5.w,
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Color(0xFFFDF4EB) ,
+                              contentPadding: EdgeInsets.all(15),
+                              hintText: 'Phone',
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide: BorderSide.none
+                              )
+                            ),
+                          ),
+                        ),
+                      ),
                     ),
-                    child: Icon(Icons.camera_alt_rounded,),
-                   )
                   ],
                 ),
-            ),
-      
-            SizedBox(height: 5.h),
-      
-            Row(
-              children: [
-                Flexible(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 20),
-                    child: SizedBox(
-                      height: 7.41.h,
-                      width: 189.5.w,
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color(0xFFFDF4EB) ,
-                          hintText: 'Name',
-                          contentPadding: EdgeInsets.all(15),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide.none
-                          )
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-      
-                 SizedBox(width: 5.w),
-             
-                Flexible(
-                  child: Padding(
-                    padding: const EdgeInsets.only(right: 20),
-                    child: SizedBox(
-                     height: 7.41.h,
-                      width: 189.5.w,
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color(0xFFFDF4EB) ,
-                          contentPadding: EdgeInsets.all(15),
-                          hintText: 'Phone',
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide.none
-                          )
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-      
-           
-      
-            Row(
-              children: [
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 20),
-                    child: SizedBox(
-                      height: 7.41.h,
-                      width: 189.5.w,
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color(0xFFFDF4EB) ,
-                          hintText: 'Email',
-                          contentPadding: EdgeInsets.all(15),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide.none
-                          )
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-      
-                 SizedBox(width: 5.w),
+          
                
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.only(right: 20),
-                    child: SizedBox(
-                      height: 7.41.h,
-                      width: 189.5.w,
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color(0xFFFDF4EB) ,
-                          contentPadding: EdgeInsets.all(15),
-                          hintText: 'Website',
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide.none
-                          )
+          
+                Row(
+                  children: [
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 20),
+                        child: SizedBox(
+                          height: 7.41.h,
+                          width: 189.5.w,
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Color(0xFFFDF4EB) ,
+                              hintText: 'Email',
+                              contentPadding: EdgeInsets.all(15),
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide: BorderSide.none
+                              )
+                            ),
+                          ),
                         ),
                       ),
                     ),
-                  ),
+
+                     SizedBox(width: 5.w),
+                   
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.only(right: 20),
+                        child: SizedBox(
+                          height: 7.41.h,
+                          width: 189.5.w,
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Color(0xFFFDF4EB) ,
+                              contentPadding: EdgeInsets.all(15),
+                              hintText: 'Website',
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide: BorderSide.none
+                              )
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
-              ],
-            ),
-      
-            
-      
-      
-             Padding(
-                    padding: const EdgeInsets.only(right: 20,left: 20),
-                    child: SizedBox(
-                      height: 7.41.h,
-                      width: 189.5.w,
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color(0xFFFDF4EB) ,
-                          contentPadding: EdgeInsets.all(15),
-                          hintText: 'Company',
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide.none
-                          )
-                        ),
-                      ),
-                    ),
-                  ),
-      
-                  
-      
-                  Row(
-              children: [
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 20),
-                    child: SizedBox(
-                      height: 7.41.h,
-                      width: 189.5.w,
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color(0xFFFDF4EB) ,
-                          hintText: 'Select Category',
-                          contentPadding: EdgeInsets.all(15),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide.none
-                          ),
-                          suffixIcon:Icon(Icons.arrow_drop_down) 
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-      
-                 SizedBox(width: 5.w),
-               
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.only(right: 20),
-                    child: SizedBox(
-                     height: 7.41.h,
-                      width: 189.5.w,
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color(0xFFFDF4EB) ,
-                          contentPadding: EdgeInsets.all(15),
-                          hintText: 'Select Sub-Category',
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide.none
-                          ),
-                           suffixIcon:Icon(Icons.arrow_drop_down) 
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-      
-            
-      
-            Padding(
-                    padding: const EdgeInsets.only(right: 20,left: 20),
-                    child: SizedBox(
-                      height: 7.41.h,
-                      width: 189.5.w,
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color(0xFFFDF4EB) ,
-                          contentPadding: EdgeInsets.all(15),
-                          hintText: 'Scheduled Meeting',
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide.none
-                          ),
-                          suffixIcon:Icon(Icons.calendar_month) 
-                        ),
-                      ),
-                    ),
-                  ),
-      
-                  
-      
-                  Padding(
-                    padding: const EdgeInsets.only(right: 20,left: 20),
-                    child: SizedBox(
-                      height: 7.41.h,
-                      width: 189.5.w,
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color(0xFFFDF4EB) ,
-                          contentPadding: EdgeInsets.all(15),
-                          hintText: 'Potential',
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide.none
-                          ),
-                          suffixIcon:Icon(Icons.arrow_drop_down) 
-                        ),
-                      ),
-                    ),
-                  ),
-      
-               
-      
-                  Padding(
-                    padding: const EdgeInsets.only(right: 20,left: 20),
-                    child: SizedBox(
-                      height: 7.41.h,
-                      width: 189.5.w,
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color(0xFFFDF4EB) ,
-                          contentPadding: EdgeInsets.all(15),
-                          hintText: 'Notes',
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide.none
-                          )
-                        ),
-                      ),
-                    ),
-                  ),
-      
-                  
-      
-                  Padding(
-                    padding: const EdgeInsets.only(right: 20,left: 20),
-                    child: SizedBox(
-                      height: 7.41.h,
-                      width: 189.5.w,
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color(0xFFFDF4EB) ,
-                          contentPadding: EdgeInsets.all(15),
-                          hintText: 'Designation',
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide.none
-                          )
-                        ),
-                      ),
-                    ),
-                  ),
-      
-      
+          
+                
           
           
-            InkWell(
-                      onTap: () {
-                        
-                      },
-                      child: Container(
-                      height:5.h,
-                      width: 40.w,
-                      margin: EdgeInsetsDirectional.only(end: 10),
-                      decoration: BoxDecoration(
-                        color: Color(0xFFBF782B),
-                        borderRadius: BorderRadius.circular(5)
+                 Padding(
+                        padding: const EdgeInsets.only(right: 20,left: 20),
+                        child: SizedBox(
+                          height: 7.41.h,
+                          width: 189.5.w,
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Color(0xFFFDF4EB) ,
+                              contentPadding: EdgeInsets.all(15),
+                              hintText: 'Company',
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide: BorderSide.none
+                              )
+                            ),
+                          ),
                         ),
-                      child: Center(child: Text(
-                        'SAVE',
-                        style: TextStyle(
-                          color:Colors.white
-                          ),)),
                       ),
+          
+                      
+          
+                      Row(
+                  children: [
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 20),
+                        child: SizedBox(
+                          height: 7.41.h,
+                          width: 189.5.w,
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Color(0xFFFDF4EB) ,
+                              hintText: 'Select Category',
+                              contentPadding: EdgeInsets.all(15),
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide: BorderSide.none
+                              ),
+                              suffixIcon:Icon(Icons.arrow_drop_down) 
+                            ),
+                          ),
+                        ),
                       ),
-      
-                    SizedBox(height: 10.w),
-      
-      
+                    ),
+
+                     SizedBox(width: 5.w),
+                   
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.only(right: 20),
+                        child: SizedBox(
+                         height: 7.41.h,
+                          width: 189.5.w,
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Color(0xFFFDF4EB) ,
+                              contentPadding: EdgeInsets.all(15),
+                              hintText: 'Select Sub-Category',
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide: BorderSide.none
+                              ),
+                               suffixIcon:Icon(Icons.arrow_drop_down) 
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+          
+                
+          
+                Padding(
+                        padding: const EdgeInsets.only(right: 20,left: 20),
+                        child: SizedBox(
+                          height: 7.41.h,
+                          width: 189.5.w,
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Color(0xFFFDF4EB) ,
+                              contentPadding: EdgeInsets.all(15),
+                              hintText: 'Scheduled Meeting',
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide: BorderSide.none
+                              ),
+                              suffixIcon:Icon(Icons.calendar_month) 
+                            ),
+                          ),
+                        ),
+                      ),
+          
+                      
+          
+                      Padding(
+                        padding: const EdgeInsets.only(right: 20,left: 20),
+                        child: SizedBox(
+                          height: 7.41.h,
+                          width: 189.5.w,
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Color(0xFFFDF4EB) ,
+                              contentPadding: EdgeInsets.all(15),
+                              hintText: 'Potential',
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide: BorderSide.none
+                              ),
+                              suffixIcon:Icon(Icons.arrow_drop_down) 
+                            ),
+                          ),
+                        ),
+                      ),
+          
+                   
+          
+                      Padding(
+                        padding: const EdgeInsets.only(right: 20,left: 20),
+                        child: SizedBox(
+                          height: 7.41.h,
+                          width: 189.5.w,
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Color(0xFFFDF4EB) ,
+                              contentPadding: EdgeInsets.all(15),
+                              hintText: 'Notes',
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide: BorderSide.none
+                              )
+                            ),
+                          ),
+                        ),
+                      ),
+          
+                      
+          
+                      Padding(
+                        padding: const EdgeInsets.only(right: 20,left: 20),
+                        child: SizedBox(
+                          height: 7.41.h,
+                          width: 189.5.w,
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Color(0xFFFDF4EB) ,
+                              contentPadding: EdgeInsets.all(15),
+                              hintText: 'Designation',
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide: BorderSide.none
+                              )
+                            ),
+                          ),
+                        ),
+                      ),
+          
+          
+              
+              
+                InkWell(
+                          onTap: () {
+                            
+                          },
+                          child: Container(
+                          height:5.h,
+                          width: 40.w,
+                          margin: EdgeInsetsDirectional.only(end: 10),
+                          decoration: BoxDecoration(
+                            color: Color(0xFFBF782B),
+                            borderRadius: BorderRadius.circular(5)
+                            ),
+                          child: Center(child: Text(
+                            'SAVE',
+                            style: TextStyle(
+                              color:Colors.white
+                              ),)),
+                          ),
+                          ),
+          
+          
+          
+          
+            ],
+          ),
         ],
       ),
     );
