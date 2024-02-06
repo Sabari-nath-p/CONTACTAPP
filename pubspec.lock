@@ -200,8 +200,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.6.1"
-<<<<<<< HEAD
-=======
   typed_data:
     dependency: transitive
     description:
@@ -218,7 +216,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.2.2"
->>>>>>> 84391a991b2c846631876e3a0978e1a63ff6c1f7
   vector_math:
     dependency: transitive
     description:
@@ -237,7 +234,4 @@ packages:
     version: "0.3.0"
 sdks:
   dart: ">=3.2.0-194.0.dev <4.0.0"
-<<<<<<< HEAD
-=======
   flutter: ">=3.13.0"
->>>>>>> 84391a991b2c846631876e3a0978e1a63ff6c1f7
