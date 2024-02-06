@@ -38,6 +38,7 @@ dependencies:
   sizer: ^2.0.15
   get: ^4.6.6
   http: ^1.0.0
+  google_fonts: ^6.1.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
