@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class AddCategoryScreen extends StatelessWidget {
   const AddCategoryScreen({super.key});
 
-  @override
+  @over
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: Column(
