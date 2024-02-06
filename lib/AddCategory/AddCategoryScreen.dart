@@ -10,7 +10,7 @@ class AddCategoryScreen extends StatelessWidget {
         title: Text("Add Category"),
         backgroundColor: Color.fromRGBO(191, 120, 43, 1),
         centerTitle: true,
-      git),
+      ),
       body: Column(),
     );
   }
