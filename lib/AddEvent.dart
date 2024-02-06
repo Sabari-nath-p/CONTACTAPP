@@ -14,13 +14,6 @@ class _AddEventScreenState extends State<AddEventScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-<<<<<<< HEAD
-      
-      ) 
-        
-      
-    ;
-=======
       appBar: AppBar(
         leading: Icon(
                               Icons.arrow_back_ios_new,
@@ -233,6 +226,5 @@ class _AddEventScreenState extends State<AddEventScreen> {
              ),
        ),
     );
->>>>>>> a045908300e208d3c4b835f054317877e93a728e
   }
 }
