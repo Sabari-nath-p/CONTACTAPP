@@ -17,8 +17,13 @@ class ContactCardScreen extends StatelessWidget {
               color:Color(0xFFBF782B),
               borderRadius: BorderRadius.circular(6.46),
             ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.end,
+            child: Stack(
+              children: [
+                Center(
+                  
+                )
+              ],
+              
               
                
               
