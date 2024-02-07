@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:sizer/sizer.dart';
 
 class ContactDataScreen extends StatefulWidget {
   const ContactDataScreen({super.key});
@@ -12,7 +14,7 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
                   appBar: AppBar(
-                    title: Text("Add Contact",style: TextStyle(color: Colors.white),),
+                    title: Text("Add Contact",style:GoogleFonts.karma(color: Colors.white,fontWeight: FontWeight.w600),),
                     centerTitle:true,
                     backgroundColor:Color(0xFFBF782B),
                     leading: InkWell(
@@ -33,335 +35,376 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(5)
                         ),
-                      child: Center(child: Text(
-                        'SAVE',
-                        style: TextStyle(
-                          color: Color(0xFFBF782B)
-                          ),)),
+                      child: Center(
+                        child: Text(
+                          'SAVE',
+                          style: GoogleFonts.karma(
+                            color: Color(0xFFBF782B),
+                            fontWeight: FontWeight.w600
+                            ),),
+                      ),
                       ),
                       ),
                     ],
                     ),
 
 
-      body: Column(
+      body: ListView(
         children: [
+          Column(
+            children: [
+              SizedBox(height: 5.h,),
+          
+                
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                       Align(
+                        alignment: Alignment.centerLeft,
+                         child: Container(
+                          height: 12.5.h,
+                          width: 25.w,
+                          decoration:BoxDecoration(
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              width:2,
+                              color: Color(0xFFBF782B)
+                            )
+                          ),
+                         ),
+                       ),
 
-
-            SizedBox(height:25),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-                child: Row(
+                       SizedBox(width: 5.w),
+                       
+                       Align(
+                        alignment: Alignment.centerLeft,
+                         child: Container(
+                          height: 12.5.h,
+                          width: 25.w,
+                          decoration:BoxDecoration(
+                            color:Color(0xFFFDF4EB) ,
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              width:2,
+                              color: Color(0xFFBF782B)
+                            )
+                          ),
+                          child: Icon(Icons.camera_alt_rounded,),
+                         ),
+                       )
+                      ],
+                    ),
+                ),
+          
+                SizedBox(height: 2.h),
+          
+                Row(
                   children: [
-                   Container(
-                    height: 75,
-                    width: 75,
-                    decoration:BoxDecoration(
-                      shape: BoxShape.circle,
-                      border: Border.all(
-                        width:2,
-                        color: Color(0xFFBF782B)
-                      )
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 20),
+                        child: SizedBox(
+                          height: 7.41.h,
+                          width: 189.5.w,
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Color(0xFFFDF4EB) ,
+                              hintText: 'Name',
+                              hintStyle: GoogleFonts.karma(fontWeight: FontWeight.w600,color: Color(0xFFA56219)),
+                              contentPadding: EdgeInsets.all(15),
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide: BorderSide.none
+                              )
+                            ),
+                          ),
+                        ),
+                      ),
                     ),
-                   ),
-                   SizedBox(width: 10),
-                   Container(
-                    height: 75,
-                    width: 75,
-                    decoration:BoxDecoration(
-                      color:Color(0xFFFDF4EB) ,
-                      shape: BoxShape.circle,
-                      border: Border.all(
-                        width:2,
-                        color: Color(0xFFBF782B)
-                      )
+
+                     SizedBox(width: 5.w),
+                 
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.only(right: 20),
+                        child: SizedBox(
+                         height: 7.41.h,
+                          width: 189.5.w,
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Color(0xFFFDF4EB) ,
+                              contentPadding: EdgeInsets.all(15),
+                              hintText: 'Phone',
+                              hintStyle: GoogleFonts.karma(fontWeight: FontWeight.w600,color: Color(0xFFA56219)),
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide: BorderSide.none
+                              )
+                            ),
+                          ),
+                        ),
+                      ),
                     ),
-                    child: Icon(Icons.camera_alt_rounded,),
-                   )
                   ],
                 ),
-            ),
-
-            SizedBox(height: 25),
-
-            Row(
-              children: [
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 20),
-                    child: SizedBox(
-                      height:50,
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color(0xFFFDF4EB) ,
-                          hintText: 'Name',
-                          contentPadding: EdgeInsets.all(15),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide.none
-                          )
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-                SizedBox(width: 10),
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.only(right: 20),
-                    child: SizedBox(
-                      height: 50,
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color(0xFFFDF4EB) ,
-                          contentPadding: EdgeInsets.all(15),
-                          hintText: 'Phone',
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide.none
-                          )
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-
-            SizedBox(height: 15),
-
-            Row(
-              children: [
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 20),
-                    child: SizedBox(
-                      height:50,
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color(0xFFFDF4EB) ,
-                          hintText: 'Email',
-                          contentPadding: EdgeInsets.all(15),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide.none
-                          )
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-                SizedBox(width: 10),
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.only(right: 20),
-                    child: SizedBox(
-                      height: 50,
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color(0xFFFDF4EB) ,
-                          contentPadding: EdgeInsets.all(15),
-                          hintText: 'Website',
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide.none
-                          )
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-
-            SizedBox(height: 15),
-
-
-             Padding(
-                    padding: const EdgeInsets.only(right: 20,left: 20),
-                    child: SizedBox(
-                      height: 50,
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color(0xFFFDF4EB) ,
-                          contentPadding: EdgeInsets.all(15),
-                          hintText: 'Company',
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide.none
-                          )
-                        ),
-                      ),
-                    ),
-                  ),
-
-                  SizedBox(height: 15),
-
-                  Row(
-              children: [
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 20),
-                    child: SizedBox(
-                      height:50,
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color(0xFFFDF4EB) ,
-                          hintText: 'Select Category',
-                          contentPadding: EdgeInsets.all(15),
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide.none
-                          ),
-                          suffixIcon:Icon(Icons.arrow_drop_down) 
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-                SizedBox(width: 10),
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.only(right: 20),
-                    child: SizedBox(
-                      height: 50,
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color(0xFFFDF4EB) ,
-                          contentPadding: EdgeInsets.all(15),
-                          hintText: 'Select Sub-Category',
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide.none
-                          ),
-                           suffixIcon:Icon(Icons.arrow_drop_down) 
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-
-            SizedBox(height: 15),
-
-            Padding(
-                    padding: const EdgeInsets.only(right: 20,left: 20),
-                    child: SizedBox(
-                      height: 50,
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color(0xFFFDF4EB) ,
-                          contentPadding: EdgeInsets.all(15),
-                          hintText: 'Scheduled Meeting',
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide.none
-                          ),
-                          suffixIcon:Icon(Icons.calendar_month) 
-                        ),
-                      ),
-                    ),
-                  ),
-
-                  SizedBox(height: 15),
-
-                  Padding(
-                    padding: const EdgeInsets.only(right: 20,left: 20),
-                    child: SizedBox(
-                      height: 50,
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color(0xFFFDF4EB) ,
-                          contentPadding: EdgeInsets.all(15),
-                          hintText: 'Potential',
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide.none
-                          ),
-                          suffixIcon:Icon(Icons.arrow_drop_down) 
-                        ),
-                      ),
-                    ),
-                  ),
-
-                  SizedBox(height: 15),
-
-                  Padding(
-                    padding: const EdgeInsets.only(right: 20,left: 20),
-                    child: SizedBox(
-                      height: 50,
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color(0xFFFDF4EB) ,
-                          contentPadding: EdgeInsets.all(15),
-                          hintText: 'Notes',
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide.none
-                          )
-                        ),
-                      ),
-                    ),
-                  ),
-
-                  SizedBox(height: 15),
-
-                  Padding(
-                    padding: const EdgeInsets.only(right: 20,left: 20),
-                    child: SizedBox(
-                      height: 50,
-                      child: TextFormField(
-                        decoration: InputDecoration(
-                          filled: true,
-                          fillColor: Color(0xFFFDF4EB) ,
-                          contentPadding: EdgeInsets.all(15),
-                          hintText: 'Designation',
-                          border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(10),
-                            borderSide: BorderSide.none
-                          )
-                        ),
-                      ),
-                    ),
-                  ),
-
-
           
-           SizedBox(height: 25),
-            InkWell(
-                      onTap: () {
-                        
-                      },
-                      child: Container(
-                      height: 30,
-                      width: 100,
-                      margin: EdgeInsetsDirectional.only(end: 10),
-                      decoration: BoxDecoration(
-                        color: Color(0xFFBF782B),
-                        borderRadius: BorderRadius.circular(5)
+               
+          
+                Row(
+                  children: [
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 20),
+                        child: SizedBox(
+                          height: 7.41.h,
+                          width: 189.5.w,
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Color(0xFFFDF4EB) ,
+                              hintText: 'Email',
+                              hintStyle: GoogleFonts.karma(fontWeight: FontWeight.w600,color: Color(0xFFA56219)),
+                              contentPadding: EdgeInsets.all(15),
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide: BorderSide.none
+                              )
+                            ),
+                          ),
                         ),
-                      child: Center(child: Text(
-                        'SAVE',
-                        style: TextStyle(
-                          color:Colors.white
-                          ),)),
                       ),
+                    ),
+
+                     SizedBox(width: 5.w),
+                   
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.only(right: 20),
+                        child: SizedBox(
+                          height: 7.41.h,
+                          width: 189.5.w,
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Color(0xFFFDF4EB) ,
+                              contentPadding: EdgeInsets.all(15),
+                              hintText: 'Website',
+                              hintStyle: GoogleFonts.karma(fontWeight: FontWeight.w600,color: Color(0xFFA56219)),
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide: BorderSide.none
+                              )
+                            ),
+                          ),
+                        ),
                       ),
+                    ),
+                  ],
+                ),
+          
+                
+          
+          
+                 Padding(
+                        padding: const EdgeInsets.only(right: 20,left: 20),
+                        child: SizedBox(
+                          height: 7.41.h,
+                          width: 189.5.w,
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Color(0xFFFDF4EB) ,
+                              contentPadding: EdgeInsets.all(15),
+                              hintText: 'Company',
+                              hintStyle: GoogleFonts.karma(fontWeight: FontWeight.w600,color: Color(0xFFA56219)),
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide: BorderSide.none
+                              )
+                            ),
+                          ),
+                        ),
+                      ),
+          
+                      
+          
+                      Row(
+                  children: [
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 20),
+                        child: SizedBox(
+                          height: 7.41.h,
+                          width: 189.5.w,
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Color(0xFFFDF4EB) ,
+                              hintText: 'Select Category',
+                              hintStyle: GoogleFonts.karma(fontWeight: FontWeight.w600,color: Color(0xFFA56219)),
+                              contentPadding: EdgeInsets.all(15),
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide: BorderSide.none
+                              ),
+                              suffixIcon:Icon(Icons.arrow_drop_down,color: Color(0xFFA56219),) 
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
 
-
-
-
+                     SizedBox(width: 5.w),
+                   
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.only(right: 20),
+                        child: SizedBox(
+                         height: 7.41.h,
+                          width: 189.5.w,
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Color(0xFFFDF4EB) ,
+                              contentPadding: EdgeInsets.all(15),
+                              hintText: 'Select Sub-Category',
+                              hintStyle: GoogleFonts.karma(fontWeight: FontWeight.w600,color: Color(0xFFA56219)),
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide: BorderSide.none
+                              ),
+                               suffixIcon:Icon(Icons.arrow_drop_down,color: Color(0xFFA56219),) 
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+          
+                
+          
+                Padding(
+                        padding: const EdgeInsets.only(right: 20,left: 20),
+                        child: SizedBox(
+                          height: 7.41.h,
+                          width: 189.5.w,
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Color(0xFFFDF4EB) ,
+                              contentPadding: EdgeInsets.all(15),
+                              hintText: 'Scheduled Meeting',
+                              hintStyle: GoogleFonts.karma(fontWeight: FontWeight.w600,color: Color(0xFFA56219)),
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide: BorderSide.none
+                              ),
+                              suffixIcon:Icon(Icons.calendar_month,color: Color(0xFFA56219),) 
+                            ),
+                          ),
+                        ),
+                      ),
+          
+                      
+          
+                      Padding(
+                        padding: const EdgeInsets.only(right: 20,left: 20),
+                        child: SizedBox(
+                          height: 7.41.h,
+                          width: 189.5.w,
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Color(0xFFFDF4EB) ,
+                              contentPadding: EdgeInsets.all(15),
+                              hintText: 'Potential',
+                              hintStyle: GoogleFonts.karma(fontWeight: FontWeight.w600,color: Color(0xFFA56219)),
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide: BorderSide.none
+                              ),
+                              suffixIcon:Icon(Icons.arrow_drop_down,color:Color(0xFFA56219) ,) 
+                            ),
+                          ),
+                        ),
+                      ),
+          
+                   
+          
+                      Padding(
+                        padding: const EdgeInsets.only(right: 20,left: 20),
+                        child: SizedBox(
+                          height: 7.41.h,
+                          width: 189.5.w,
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Color(0xFFFDF4EB) ,
+                              contentPadding: EdgeInsets.all(15),
+                              hintText: 'Notes',
+                              hintStyle: GoogleFonts.karma(fontWeight: FontWeight.w600,color: Color(0xFFA56219)),
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide: BorderSide.none
+                              )
+                            ),
+                          ),
+                        ),
+                      ),
+          
+                      
+          
+                      Padding(
+                        padding: const EdgeInsets.only(right: 20,left: 20),
+                        child: SizedBox(
+                          height: 7.41.h,
+                          width: 189.5.w,
+                          child: TextFormField(
+                            decoration: InputDecoration(
+                              filled: true,
+                              fillColor: Color(0xFFFDF4EB) ,
+                              contentPadding: EdgeInsets.all(15),
+                              hintText: 'Designation',
+                              hintStyle: GoogleFonts.karma(fontWeight: FontWeight.w600,color: Color(0xFFA56219)),
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                                borderSide: BorderSide.none
+                              )
+                            ),
+                          ),
+                        ),
+                      ),
+          
+          
+              
+              
+                InkWell(
+                          onTap: () {
+                            
+                          },
+                          child: Container(
+                          height:5.h,
+                          width: 40.w,
+                          margin: EdgeInsetsDirectional.only(end: 10),
+                          decoration: BoxDecoration(
+                            color: Color(0xFFBF782B),
+                            borderRadius: BorderRadius.circular(5)
+                            ),
+                          child: Center(child: Text(
+                            'SAVE',                           
+                            style:GoogleFonts.karma(fontWeight: FontWeight.w600,color: Colors.white),)),
+                          ),
+                          ),
+          
+          
+          
+          
+            ],
+          ),
         ],
       ),
     );
