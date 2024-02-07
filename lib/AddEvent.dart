@@ -16,14 +16,13 @@ class _AddEventScreenState extends State<AddEventScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Icon(
-                              Icons.arrow_back_ios_new,
-                              size: 5.w,
-                            ),
+
+        leading: IconButton(onPressed:(){ Navigator.pop(context);}, icon:Icon(Icons.arrow_back_ios),color: Colors.white,),
+      
 
         
 
-        title: Text('Add Event', style: GoogleFonts.karma(color: Colors.white,fontSize: 11.sp,fontWeight: FontWeight.w500),),
+        title: Text('Add Event', style: GoogleFonts.karma(color: Colors.white,fontSize: 12.sp,fontWeight: FontWeight.w500),),
         backgroundColor: Color(0xffBF782B),
         centerTitle: true,
       ),
@@ -54,9 +53,9 @@ class _AddEventScreenState extends State<AddEventScreen> {
               child: TextFormField(
                 decoration: InputDecoration(
                   hintText: 'Event Name',
-                  hintStyle: GoogleFonts.karma(color: Color(0xffA56219), fontSize: 4.sp,),
+                  hintStyle: GoogleFonts.karma(color: Color(0xffA56219), fontSize: 5.sp,),
                   prefixIcon: Icon(
-                    Icons.roller_shades_closed,
+                    Icons.roller_skating_rounded,
                     color: Color(0xffA56219), // Example of setting the color
                     size: 24, // Example of setting the size
                   ),
@@ -84,7 +83,7 @@ class _AddEventScreenState extends State<AddEventScreen> {
                       hintText: 'Location',
                       hintStyle: GoogleFonts.karma(
                           color: Color(0xffA56219),
-                          fontSize: 4.sp,
+                          fontSize: 5.sp,
                           fontWeight: FontWeight.w500),
                       prefixIcon: Icon(
                         Icons.location_pin,
@@ -107,7 +106,7 @@ class _AddEventScreenState extends State<AddEventScreen> {
                 child: TextFormField(
                   decoration: InputDecoration(
                     hintText: 'Start Date',
-                    hintStyle: GoogleFonts.karma(color: Color(0xffA56219), fontSize: 4.sp),
+                    hintStyle: GoogleFonts.karma(color: Color(0xffA56219), fontSize: 5.sp),
                     prefixIcon: Icon(
                       Icons.calendar_month,
                       color: Color(0xffA56219), // Example of setting the color
@@ -132,7 +131,7 @@ class _AddEventScreenState extends State<AddEventScreen> {
                 child: TextFormField(
                   decoration: InputDecoration(
                     hintText: 'End Date',
-                    hintStyle: GoogleFonts.karma(color: Color(0xffA56219), fontSize: 4.sp),
+                    hintStyle: GoogleFonts.karma(color: Color(0xffA56219), fontSize: 5.sp),
                     prefixIcon: Icon(
                       Icons.calendar_month,
                       color: Color(0xffA56219), // Example of setting the color
@@ -158,7 +157,7 @@ class _AddEventScreenState extends State<AddEventScreen> {
                 child: TextFormField(
                   decoration: InputDecoration(
                     hintText: 'Attended by',
-                    hintStyle: GoogleFonts.karma(color: Color(0xffA56219), fontSize: 4.sp),
+                    hintStyle: GoogleFonts.karma(color: Color(0xffA56219), fontSize: 5.sp),
                     prefixIcon: Icon(
                       Icons.person,
                       color: Color(0xffA56219), // Example of setting the color
@@ -182,7 +181,7 @@ class _AddEventScreenState extends State<AddEventScreen> {
                           },
                           child: Container(
                           height: 5.76.h,
-                          width: 15.21.w,
+                          width: 20.21.w,
                           margin: EdgeInsetsDirectional.only(end: 10),
                           decoration: BoxDecoration(
                             color: Color(0xFFBF782B),
@@ -203,7 +202,7 @@ class _AddEventScreenState extends State<AddEventScreen> {
                           },
                           child: Container(
                           height: 5.76.h,
-                          width: 15.21.w,
+                          width: 20.21.w,
                           margin: EdgeInsetsDirectional.only(end: 10),
                           decoration: BoxDecoration(
                             color: Color(0xFFBF782B),
