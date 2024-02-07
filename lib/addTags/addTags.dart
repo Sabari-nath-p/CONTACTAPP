@@ -40,6 +40,17 @@ class _AddTagScreenState extends State<AddTagScreen> {
                 ),
               ),
             ),
+          ),
+          Container(
+            height: 12.6.h,
+            width: 23.8.w,
+            color: Color.fromRGBO(191, 120, 43, 1),
+            alignment: Alignment.center,
+            child: Text(
+              'Save',
+              style: TextStyle(
+                  fontSize: 20.0, color: Color.fromRGBO(255, 255, 255, 1)),
+            ),
           )
         ],
       ),
