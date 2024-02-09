@@ -28,50 +28,64 @@ class _categoryScreenState extends State<categoryScreen> {
           centerTitle: true,
         ),
         body: Padding(
-          padding: EdgeInsets.symmetric(vertical: 27.8.h, horizontal: 11.0.h),
-          child: Column(
-            children: <Widget>[
-              Text(
-                'Categories :',
-                style: TextStyle(
-                  fontSize: 36.0,
-                  color: Color(0xFFBF782B),
+          padding: EdgeInsets.all(4.2.w),
+          child: SingleChildScrollView(
+            child: Column(
+              children: <Widget>[
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    'Categories :',
+                    style: TextStyle(
+                      fontSize: 36.0,
+                      color: Color(0xFFBF782B),
+                    ),
+                  ),
                 ),
-              ),
-              SizedBox(height: 12.0.h),
-              Container(
-                height: 8.5.h,
-                width: 196.8.w,
-                color: Color.fromRGBO(253, 244, 235, 1),
-                child: const Text(
-                  'palm',
-                  style: TextStyle(
-                      fontSize: 36.0, color: Color.fromRGBO(191, 120, 43, 1)),
+                SizedBox(height: 12.0.h),
+                Container(
+                  height: 8.5.h,
+                  width: 196.8.w,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(2.1.w),
+                    color: Color.fromRGBO(253, 244, 235, 1),
+                  ),
+                  child: const Text(
+                    'palm',
+                    style: TextStyle(
+                        fontSize: 36.0, color: Color.fromRGBO(191, 120, 43, 1)),
+                  ),
                 ),
-              ),
-              SizedBox(height: 12.0.h),
-              Container(
-                height: 8.5.h,
-                width: 196.8.w,
-                color: Color.fromRGBO(253, 244, 235, 1),
-                child: const Text(
-                  'Wood',
-                  style: TextStyle(
-                      fontSize: 36.0, color: Color.fromRGBO(191, 120, 43, 1)),
+                SizedBox(height: 12.0.h),
+                Container(
+                  height: 8.5.h,
+                  width: 196.8.w,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(2.1.w),
+                    color: Color.fromRGBO(253, 244, 235, 1),
+                  ),
+                  child: const Text(
+                    'Wood',
+                    style: TextStyle(
+                        fontSize: 36.0, color: Color.fromRGBO(191, 120, 43, 1)),
+                  ),
                 ),
-              ),
-              SizedBox(height: 12.0.h),
-              Container(
-                height: 8.5.h,
-                width: 196.8.w,
-                color: Color.fromRGBO(253, 244, 235, 1),
-                child: const Text(
-                  'Bagasse',
-                  style: TextStyle(
-                      fontSize: 36.0, color: Color.fromRGBO(191, 120, 43, 1)),
+                SizedBox(height: 12.0.h),
+                Container(
+                  height: 8.5.h,
+                  width: 196.8.w,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(2.1.w),
+                    color: Color.fromRGBO(253, 244, 235, 1),
+                  ),
+                  child: const Text(
+                    'Bagasse',
+                    style: TextStyle(
+                        fontSize: 36.0, color: Color.fromRGBO(191, 120, 43, 1)),
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         )
 
