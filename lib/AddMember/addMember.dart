@@ -1,4 +1,5 @@
-import 'package:contactapp/main.dart';
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
@@ -10,9 +11,9 @@ class AddMemberScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Add Member'),
+        title: Text('Add Member', style: GoogleFonts.karma(fontWeight: FontWeight.bold ,fontSize: 10.81.sp),),
         backgroundColor: Color.fromRGBO(191, 120, 43, 1),
-        centerTitle: true,
+        centerTitle: true, 
       ),
       body: Align(
         alignment: Alignment.center,
@@ -74,7 +75,7 @@ class AddMemberScreen extends StatelessWidget {
                 "ADD",
                 style: GoogleFonts.karma(
                     color: Color(0xffFFFFFF),
-                    fontSize: 10.sp,
+                    fontSize: 8.sp,
                     fontWeight: FontWeight.bold),
               ),
             )
