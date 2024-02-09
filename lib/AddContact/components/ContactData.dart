@@ -20,7 +20,7 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
                       style:GoogleFonts.karma(
                         color: Colors.white,
                         fontWeight: FontWeight.w700,
-                        fontSize:9.60.sp,)),
+                        fontSize:9.61.sp,)),
                     centerTitle:true,
                     backgroundColor:Color(0xFFBF782B),
                     leading: InkWell(
@@ -37,10 +37,10 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
                         alignment: Alignment.center,
                       height: 2.59.h,
                       width: 12.70.w,
-                      margin: EdgeInsetsDirectional.only(end: 2.15.w,bottom:1.h ),
+                      margin: EdgeInsetsDirectional.only(end: 2.15.w,bottom:1.03.h ),
                       decoration: BoxDecoration(
                         color: Colors.white,
-                        borderRadius: BorderRadius.circular(4)
+                        borderRadius: BorderRadius.circular(5)
                         ),
                       child: Text(
                         'SAVE',
@@ -60,6 +60,7 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
         child: Column(
           children: [ 
               Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                  Container(
                   height: 5.53.h,
@@ -213,7 +214,7 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
               height:6.04.h,
               width: 84.17.w,
                         decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8),
+                        borderRadius: BorderRadius.circular(5),
                         color: Color(0xFFFDF4EB)),
                       child: TextField(
                        textAlignVertical: TextAlignVertical.top,
@@ -257,7 +258,7 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
                             style:GoogleFonts.karma(
                               fontWeight: FontWeight.w600,
                               color: Colors.white,
-                              fontSize:7.33.sp,
+                              fontSize:7.20.sp,
                               ),)),
                         ),
                         ),
@@ -280,7 +281,7 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
             height: 3.05.h,
             width: 84.17.w,
                       decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(8),
+                      borderRadius: BorderRadius.circular(5),
                       color: Color(0xFFFDF4EB)),
                     child: TextField(
                       textAlign: TextAlign.start,
@@ -310,7 +311,7 @@ inputfield(String name) {
               height: 3.05.h,
               width: 84.17.w,
                         decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(8),
+                        borderRadius: BorderRadius.circular(5),
                         color: Color(0xFFFDF4EB)),
                       child: TextField(
                         textAlign: TextAlign.start,
