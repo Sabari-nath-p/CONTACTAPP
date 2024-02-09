@@ -36,8 +36,8 @@ class TagScreen extends StatelessWidget {
                       fontSize: 20.0, color: Color.fromRGBO(165, 98, 25, 1)),
                 ),
                 Container(
-                  width: 30,
-                  height: 9.1.h,
+                  width: 6.5.h,
+                  height: 13.6.h,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       color: Colors.red),
@@ -56,6 +56,7 @@ class TagScreen extends StatelessWidget {
             child: const Text(
               'medium',
               style: TextStyle(
+                fontSize: 20.0,
                 color: Color.fromRGBO(165, 98, 25, 1),
               ),
             ),
