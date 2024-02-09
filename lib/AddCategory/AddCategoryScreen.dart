@@ -13,7 +13,8 @@ class AddCategoryScreen extends StatelessWidget {
         backgroundColor: const Color.fromRGBO(191, 120, 43, 1),
         centerTitle: true,
       ),
-      body: Column( children: [
+      body: Column(
+        children: [
         SizedBox(height: 8.23.h),
         Container(
           margin: EdgeInsets.only(left: 5.47.w,right: 5.47.w),
@@ -83,8 +84,9 @@ class AddCategoryScreen extends StatelessWidget {
 
 
 
-
-      ),
+),
     );
   }
 }
+
+      
