@@ -1,5 +1,6 @@
 import 'package:contactapp/main.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
 
 class AddCategoryScreen extends StatelessWidget {
@@ -7,86 +8,80 @@ class AddCategoryScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return  Scaffold(
       appBar: AppBar(
-        title: const Text("Add Category"),
-        backgroundColor: const Color.fromRGBO(191, 120, 43, 1),
+        title: Text('Add Category', style: GoogleFonts.karma(fontWeight: FontWeight.bold ,fontSize:10.81.sp),),
+        backgroundColor: Color.fromRGBO(191, 120, 43, 1),
         centerTitle: true,
       ),
-      body: Column(
-        children: [
-        SizedBox(height: 8.23.h),
-        Container(
-          margin: EdgeInsets.only(left: 5.47.w,right: 5.47.w),
-        height: 8.47.h,
-        width: 190.w,
-        alignment: Alignment.centerLeft,
-        padding:EdgeInsets.only(left:3.w) ,
-        
-        decoration:BoxDecoration(
-      
-        borderRadius: BorderRadius.circular(2.10.w),
-      color: const Color.fromRGBO(253, 244, 235, 1)),
-      
-      child: const Text("Name",style: TextStyle(
-      color: Color.fromRGBO(165, 98, 25, 1,),
-      fontWeight: FontWeight.w500,
-      fontSize:20,
-      fontStyle:FontStyle.normal),),
-      
-
-
+      body: Align(
+        alignment: Alignment.center,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 6.470.h,
+            ),
+            Container(
+              height: 4.10.h,
+              width: 86.33.w,
+              // margin: EdgeInsets.only(left: 2.w),
+              alignment: Alignment.centerLeft,
+              padding: EdgeInsets.only(left: 5.368.w),
+              decoration: BoxDecoration(
+                color: Color.fromRGBO(253, 244, 235, 1),
+                borderRadius: BorderRadius.circular(1.1.w),
+              ),
+              child: TextField(
+                decoration: InputDecoration(
+                  hintText: "Name",
+                  border: InputBorder.none,
+                  isDense: true,
+                  hintStyle: GoogleFonts.karma(color: Color(0xffBF782B)),
+                ),
+                style: GoogleFonts.karma(color: Color(0xffBF782B)),
+              ),
+            ),
+            Container(
+              height: 10.16.h,
+              width: 86.33.w,
+              margin: EdgeInsets.only(top: 1.95.h),
+              //  alignment: Alignment.centerLeft,
+              padding: EdgeInsets.only(left: 5.368.w, top: 5),
+              decoration: BoxDecoration(
+                color: Color.fromRGBO(253, 244, 235, 1),
+                borderRadius: BorderRadius.circular(1.1.w),
+              ),
+              child: TextField(
+                  textAlignVertical: TextAlignVertical.top,
+                  decoration: InputDecoration(
+                      border: InputBorder.none,
+                      isDense: true,
+                      isCollapsed: true,
+                      hintText: "Description",
+                      hintStyle: GoogleFonts.karma(color: Color(0xffBF782B))),
+                  style: GoogleFonts.karma(color: Color(0xffBF782B))),
+            ),
+            Container(
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  color: Color(0xffBF782B)),
+              margin: EdgeInsets.only(top: 3.h),
+              height: 4.61.h,
+              width: 37.17.w,
+              child: Text(
+                "ADD",
+                style:GoogleFonts.karma(
+                    color: Color(0xffFFFFFF),
+                    fontSize: 10.sp,
+                    fontWeight: FontWeight.bold),
+              ),
+            )
+          ],
+        ),
       ),
-              SizedBox(height: 4.94.h),
-              
-        Container(
-          margin: EdgeInsets.only(left: 5.47.w,right: 5.47.w),
-        height: 27.05.h,
-        width: 190.w,
-      
-        alignment: Alignment.centerLeft,
-        
-        padding:EdgeInsets.only(left:3.w) ,
-        
-        decoration:BoxDecoration(
-      
-        borderRadius: BorderRadius.circular(2.10.w),
-      color: const Color.fromRGBO(253, 244, 235, 1)),
-    
-      
-        child: Align(
-    alignment: Alignment.topLeft,
-    
-
-        child:  Text("Description",style: TextStyle(
-        color: Colors.blue,
-        fontWeight: FontWeight.w500,
-        fontSize:20,
-        fontStyle:FontStyle.normal,
-        
-        textBaseline: TextBaseline.alphabetic,
-        ),
-          
-        ),
-        ),
-        
-        
-     
-      
-  
-),
-      
-      
-      
-
-        
-      ],
-
-
-
-),
     );
   }
 }
 
-      
