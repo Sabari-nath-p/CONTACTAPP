@@ -46,7 +46,10 @@ class _categoryScreenState extends State<categoryScreen> {
                 Container(
                   height: 8.5.h,
                   width: 196.8.w,
-                  color: Color.fromRGBO(253, 244, 235, 1),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(2.1.w),
+                    color: Color.fromRGBO(253, 244, 235, 1),
+                  ),
                   child: const Text(
                     'palm',
                     style: TextStyle(
@@ -57,7 +60,10 @@ class _categoryScreenState extends State<categoryScreen> {
                 Container(
                   height: 8.5.h,
                   width: 196.8.w,
-                  color: Color.fromRGBO(253, 244, 235, 1),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(2.1.w),
+                    color: Color.fromRGBO(253, 244, 235, 1),
+                  ),
                   child: const Text(
                     'Wood',
                     style: TextStyle(
@@ -68,7 +74,10 @@ class _categoryScreenState extends State<categoryScreen> {
                 Container(
                   height: 8.5.h,
                   width: 196.8.w,
-                  color: Color.fromRGBO(253, 244, 235, 1),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(2.1.w),
+                    color: Color.fromRGBO(253, 244, 235, 1),
+                  ),
                   child: const Text(
                     'Bagasse',
                     style: TextStyle(
