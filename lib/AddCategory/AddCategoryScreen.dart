@@ -1,38 +1,23 @@
-<<<<<<< HEAD
-import 'package:contactapp/MembersScreen/addMember.dart';
-import 'package:contactapp/utils/appBar.dart';
-import 'package:flutter/material.dart';
-import 'package:get/route_manager.dart';
-=======
 import 'package:contactapp/main.dart';
+import 'package:contactapp/utils/appBar.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
->>>>>>> 713cc35cc1ec6bfb6f3466bf8a474adeb6d122db
 
 class AddCategoryScreen extends StatelessWidget {
   const AddCategoryScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
-    return Scaffold(
-      appBar: CAappBar(
+    return  Scaffold(
+      appBar:CAappBar(
           context: context,
           title: "Add Category",
           isAdd: false,
           isBack: true,
           fn: () {
-            Get.to(() => AddMemberScreen(), transition: Transition.rightToLeft);
+         
           }),
-      body: Column(),
-=======
-    return  Scaffold(
-      appBar: AppBar(
-        title: Text('Add Category', style: GoogleFonts.karma(fontWeight: FontWeight.bold ,fontSize:10.81.sp),),
-        backgroundColor: Color.fromRGBO(191, 120, 43, 1),
-        centerTitle: true,
-      ),
       body: Align(
         alignment: Alignment.center,
         child: Column(
@@ -100,8 +85,6 @@ class AddCategoryScreen extends StatelessWidget {
           ],
         ),
       ),
->>>>>>> 713cc35cc1ec6bfb6f3466bf8a474adeb6d122db
     );
   }
 }
-
