@@ -39,6 +39,7 @@ dependencies:
   get: ^4.6.6
   http: ^1.0.0
   google_fonts: ^6.1.0
+  animate_do: ^3.3.3
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -64,6 +65,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/image/
+    - assets/temp/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

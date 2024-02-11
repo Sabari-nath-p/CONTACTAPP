@@ -1,4 +1,4 @@
-import 'package:contactapp/DashBoard.dart';
+import 'package:contactapp/EventListScreen/EventListScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:sizer/sizer.dart';
@@ -17,7 +17,7 @@ class ContactApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Sizer(builder: (context, Orientation, DeviceType) {
       return GetMaterialApp(
-        home: DashboradScreen(),
+        home: EventListScreen(),
       );
     });
   }

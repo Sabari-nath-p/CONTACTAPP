@@ -1,7 +1,11 @@
 import 'package:contactapp/main.dart';
+import 'package:contactapp/utils/appBar.dart';
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
+
+import '../AddCategory/AddCategoryScreen.dart';
 
 class AddMemberScreen extends StatelessWidget {
   const AddMemberScreen({super.key});
@@ -9,11 +13,12 @@ class AddMemberScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Add Member'),
-        backgroundColor: Color.fromRGBO(191, 120, 43, 1),
-        centerTitle: true,
-      ),
+      appBar: CAappBar(
+          context: context,
+          title: "Add Members",
+          isAdd: false,
+          isBack: true,
+          fn: () {}),
       body: Align(
         alignment: Alignment.center,
         child: Column(
