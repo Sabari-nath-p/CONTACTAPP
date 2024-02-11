@@ -47,10 +47,55 @@ class _categoryScreenState extends State<categoryScreen> {
                     ),
                   ),
                 ),
+<<<<<<< HEAD
                 SizedBox(height: 1.0.h),
                 _ItemCard("Palm"),
                 _ItemCard("Wood"),
                 _ItemCard("Bagasse")
+=======
+                SizedBox(height: 12.0.h),
+                Container(
+                  height: 8.5.h,
+                  width: 196.8.w,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(2.1.w),
+                    color: Color.fromRGBO(253, 244, 235, 1),
+                  ),
+                  child: const Text(
+                    'palm',
+                    style: TextStyle(
+                        fontSize: 36.0, color: Color.fromRGBO(191, 120, 43, 1)),
+                  ),
+                ),
+                SizedBox(height: 12.0.h),
+                Container(
+                  height: 8.5.h,
+                  width: 196.8.w,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(2.1.w),
+                    color: Color.fromRGBO(253, 244, 235, 1),
+                  ),
+                  child: const Text(
+                    'Wood',
+                    style: TextStyle(
+                        fontSize: 36.0, color: Color.fromRGBO(191, 120, 43, 1)),
+                  ),
+                ),
+                SizedBox(height: 12.0.h),
+                Container(
+                  height: 8.5.h,
+                  width: 196.8.w,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(2.1.w),
+                    color: Color.fromRGBO(253, 244, 235, 1),
+                  ),
+                  child: const Text(
+                    'Bagasse',
+                    style: TextStyle(
+                        fontSize: 36.0, color: Color.fromRGBO(191, 120, 43, 1)),
+                  ),
+                ),
+>>>>>>> 713cc35cc1ec6bfb6f3466bf8a474adeb6d122db
               ],
             ),
           ),

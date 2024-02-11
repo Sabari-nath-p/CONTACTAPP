@@ -1,5 +1,10 @@
+<<<<<<< HEAD:lib/MembersScreen/addMember.dart
 import 'package:contactapp/main.dart';
 import 'package:contactapp/utils/appBar.dart';
+=======
+import 'dart:ui';
+
+>>>>>>> 713cc35cc1ec6bfb6f3466bf8a474adeb6d122db:lib/AddMember/addMember.dart
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -13,12 +18,20 @@ class AddMemberScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+<<<<<<< HEAD:lib/MembersScreen/addMember.dart
       appBar: CAappBar(
           context: context,
           title: "Add Members",
           isAdd: false,
           isBack: true,
           fn: () {}),
+=======
+      appBar: AppBar(
+        title: Text('Add Member', style: GoogleFonts.karma(fontWeight: FontWeight.bold ,fontSize: 10.81.sp),),
+        backgroundColor: Color.fromRGBO(191, 120, 43, 1),
+        centerTitle: true, 
+      ),
+>>>>>>> 713cc35cc1ec6bfb6f3466bf8a474adeb6d122db:lib/AddMember/addMember.dart
       body: Align(
         alignment: Alignment.center,
         child: Column(
@@ -79,7 +92,7 @@ class AddMemberScreen extends StatelessWidget {
                 "ADD",
                 style: GoogleFonts.karma(
                     color: Color(0xffFFFFFF),
-                    fontSize: 10.sp,
+                    fontSize: 8.sp,
                     fontWeight: FontWeight.bold),
               ),
             )
