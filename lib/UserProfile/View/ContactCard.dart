@@ -39,11 +39,23 @@ class ContactCard extends StatelessWidget {
                                padding: EdgeInsets.only(left: 6.w),
                                child: Column(
                                  children: [
-                                   CircleAvatar(radius: 6.w,backgroundColor: Color(0xffA56219),
+                                 Container(
+                                  width: 16.2.w,
+                                  height: 10.h,
+                                   decoration:BoxDecoration(
+                    color:Color(0xFFFDF4EB) ,
+                    shape: BoxShape.circle,
+                    border: Border.all(
+                      width:0.22.w,
+                      color: Color(0xFFBF782B)
+                    )
+                  ),
+                  child: Image.asset("assets/image/person.png") ,
+                                 ),
                                    
-                                   child: Image.asset("assets/image/person.png"),
+                                 
                                                             
-                                     ),
+                                     
                                       Text("Steven",style:GoogleFonts.karma(color: Color(0xffA56219),fontSize: 8.4.sp,fontWeight:FontWeight.w800),textAlign: TextAlign.center,),
                                                      
                                  ],
@@ -77,23 +89,51 @@ class ContactCard extends StatelessWidget {
                                            children: [
                           Text("Potential :",style:GoogleFonts.karma(color: Color(0xffA56219),fontSize: 8.4.sp,fontWeight:FontWeight.w600),textAlign: TextAlign.right,),
                            Text(" High",style:GoogleFonts.karma(color: Color(0xffA56219),fontSize: 8.4.sp,fontWeight:FontWeight.w400),textAlign: TextAlign.right,),
-                                           ],
+                                          ],
+                                           
                                 ),
-                                         SizedBox(height: 0.8.w,),
+                                           SizedBox(height: 2.h,)  
                                   ]),
                            ),
                            Column(
                              children: [
                                Align(
                                 alignment: Alignment.topRight,
-                                 child: Container(
-                                   width: 37.w,
-                                   height: 8.h,
-                                   decoration: BoxDecoration(
-                                                border: Border.all( color:Color(0xffA56219),width: 0.15.w),
-                                                 borderRadius: BorderRadius.circular(3),
-                                                ) ,
-                                                child: Image.asset("assets/image/ContactCard.png",fit: BoxFit.cover,)
+                                 child: Column(
+                                   children: [
+                                      SizedBox(height: 2.h,)  ,
+                                     Container(
+                                       width: 37.w,
+                                       height: 8.h,
+                                       decoration: BoxDecoration(
+                                                    border: Border.all( color:Color(0xffA56219),width: 0.15.w),
+                                                     borderRadius: BorderRadius.circular(3),
+                                                    ) ,
+                                                    child: 
+                                                        Image.asset("assets/image/ContactCard.png",fit: BoxFit.cover,),
+                                                       
+                                                     
+                                     ),
+                                      Container(width:32.6.w ,
+                                                    height: 1.1.h,
+                                                    decoration: BoxDecoration(color: Color(0xffBF782B),borderRadius: BorderRadius.circular(2)),
+                                                    child: Row(
+                                                      children: [
+                                                        SizedBox(width:3.w),
+                                                        Icon(Icons.arrow_back_ios_new,color: Colors.white,size: 2.w,)
+                                                      ,Expanded(child: Container()),
+                                                     
+                                                     SizedBox(
+                                                      width: 1.4.h,
+                                                      height: 1.4.h,
+                                                      child: Image.asset("assets/image/arrowright.png",fit: BoxFit.fill,)),
+                                                      SizedBox(width:3.w),
+                                                      ],
+                                                    ),
+                                                    
+                                                    
+                                                    )
+                                   ],
                                  ),
                                ),
                                SizedBox(height: 4.h,),
@@ -111,13 +151,14 @@ class ContactCard extends StatelessWidget {
                               Text(" Sales Executive",style:GoogleFonts.karma(color: Color(0xffA56219),fontSize: 8.4.sp,fontWeight:FontWeight.w400),textAlign: TextAlign.right,),
                       ],
                                         ),
+                                         SizedBox(height: 2.h,)  
                     
                              ],
                            ),
                             
                        
                                         
-                           SizedBox(height: 2.h,)  
+                          
                       
                            ],
                          ),

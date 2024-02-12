@@ -1,3 +1,5 @@
+import 'package:contactapp/AddContact/components/ContactCard.dart';
+import 'package:contactapp/UserProfile/View/ContactCard.dart';
 import 'package:contactapp/main.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -37,7 +39,7 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
                         alignment: Alignment.center,
                       height: 2.59.h,
                       width: 12.70.w,
-                      margin: EdgeInsetsDirectional.only(end: 2.15.w,bottom:1.03.h ),
+                       margin: EdgeInsetsDirectional.only(end: 2.15.w,bottom:1.03.h ),
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(5)
@@ -56,7 +58,7 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
 
 
       body: Padding(
-        padding: EdgeInsets.fromLTRB(8.5.w, 6.04.h,8.5.w,6.93.h),
+        padding: EdgeInsets.fromLTRB(8.5.w, 6.04.h,5.w,6.93.h),
         child: Column(
           children: [ 
               Row(
@@ -110,7 +112,9 @@ class _ContactDataScreenState extends State<ContactDataScreen> {
                         ),
                     ],
                   )
-                 )
+                 ),
+                 SizedBox(width: 1.w,),
+                 ContactCardScreen(),
                 ],
               ),
 
