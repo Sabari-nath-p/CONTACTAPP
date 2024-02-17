@@ -1,5 +1,6 @@
 
 import 'package:contactapp/EventListScreen/EventListScreen.dart';
+import 'package:contactapp/Scancontact.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:sizer/sizer.dart';
@@ -18,7 +19,7 @@ class ContactApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Sizer(builder: (context, Orientation, DeviceType) {
       return GetMaterialApp(
-        home: EventListScreen(),
+        home: Scancontact(),
       );
     });
   }
