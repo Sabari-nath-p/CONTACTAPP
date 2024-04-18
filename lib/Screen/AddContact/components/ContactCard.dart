@@ -127,7 +127,7 @@ class _ContactCardScreenState extends State<ContactCardScreen> {
                                     emails.add(match.group(0)!);
                                   }
                                   if (emails.length > 0)
-                                    widget.email.text = emails.join(",");
+                                    widget.email.text = emails[0];
                                 } else if (data.contains("www.")) {
                                   widget.website.text = data;
                                   List<String> words = data.split(".");
@@ -136,10 +136,9 @@ class _ContactCardScreenState extends State<ContactCardScreen> {
                                   } else {
                                     widget.company.text = words[0];
                                   }
-                                } else if ((data.contains("+") || data.isNum) &&
-                                    data.length > 9) {
+                                } else if ((data.contains("+"))) {
                                   RegExp regExp = RegExp(
-                                      r'(\+\d{1,3}[\s.-]?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}',
+                                      r'(\+\d{1,9}[\s.-]?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}',
                                       multiLine: true);
                                   Iterable<Match> matches =
                                       regExp.allMatches(text);
@@ -150,7 +149,7 @@ class _ContactCardScreenState extends State<ContactCardScreen> {
                                   }
 
                                   if (phoneNumbers.length > 0)
-                                    widget.mobile.text = phoneNumbers.join(",");
+                                    widget.mobile.text = phoneNumbers[0];
                                 }
                               }
                               Fluttertoast.showToast(
